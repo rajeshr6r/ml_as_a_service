@@ -14,6 +14,9 @@ A setup for providing ML As a Service with any Cloud Provider
 7. Storage Account 
 8. Azure function with Blob Trigger to process batch images and send response 
 
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/rajeshr6r/ml_as_a_service/main/azure/azuredeploy.json)
+
+
 ### AWS
 
 ### GCP
