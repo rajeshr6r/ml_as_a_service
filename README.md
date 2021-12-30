@@ -3,14 +3,15 @@ A setup for providing ML As a Service with any Cloud Provider
 
 ## Background and Objective
 
-One of the greatest challenges faced by a Data Scientist is getting their <b>sophisticated ML Model running successfully in their laptops</b> to the end user. So many tools are available and yet everything requires the Data Scientist to learn the toolkit to proceed . 
+One of the greatest challenges faced by a Data Scientist is getting their <b>sophisticated ML Model running successfully in their laptops</b> to the end user. So many tools are available and yet everything requires the Data Scientist to learn additional toolkits to proceed. <b> Not to mention the complexities involved in provisioning resources both hardware / software and all the other additional costs involved </b>
 
-Some of the challenges involved in deploying a model to production include 
+Some of the key critical challenges involved in deploying a model to production excluding the TCO ( total cost of ownership ) are 
   a. Scalability 
   b. Accessibility 
   c. Usability
+  d. Security
   
-Our purpose to is to address the above problems with a one-stop solution .
+Our purpose to is to address the above problems with a one-stop solution on cloud
 
 ## OUT OF SCOPE
 This repo will use boilerplate model training / deployment scripts and will not demonstrate how a model is being trained or can be fine-tuned. We assume that the models are pre-built and ready to deploy.
