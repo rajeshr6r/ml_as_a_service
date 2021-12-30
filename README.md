@@ -12,7 +12,7 @@ Some of the key critical challenges involved in deploying a model to production 
   <li>b. Accessibility </li>
   <li>c. Usability</li>
   <li>d. Security</li>
- </list>
+ </list></br>
   
 Our purpose to is to address the above problems with a one-stop solution on cloud
 
