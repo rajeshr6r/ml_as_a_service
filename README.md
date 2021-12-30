@@ -8,10 +8,10 @@ One of the greatest challenges faced by a Data Scientist is getting their <b>sop
 Some of the key critical challenges involved in deploying a model to production excluding the TCO ( total cost of ownership ) are 
 
 <list>
-  a. Scalability 
-  b. Accessibility 
-  c. Usability
-  d. Security
+  <li>a. Scalability </li>
+  <li>b. Accessibility </li>
+  <li>c. Usability</li>
+  <li>d. Security</li>
  </list>
   
 Our purpose to is to address the above problems with a one-stop solution on cloud
