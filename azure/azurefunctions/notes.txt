@@ -1,0 +1,1 @@
+##Spaceholder for Azure Function Code to trigger http function on Blob Storage changes##
