@@ -1,6 +1,21 @@
 # ml_as_a_service
 A setup for providing ML As a Service with any Cloud Provider
 
+## Background and Objective
+
+One of the greatest challenges faced by a Data Scientist is getting their <b>sophisticated ML Model running successfully in their laptops<b> to the end user. So many tools are available and yet everything requires the Data Scientist to learn the toolkit to proceed . 
+
+Some of the challenges involved in deploying a model to production include 
+  a. Scalability 
+  b. Accessibility 
+  c. Usability
+  
+Our purpose to is to address the above problems with a one-stop solution .
+
+## OUT OF SCOPE
+This repo will use boilerplate model training / deployment scripts and will not demonstrate how a model is being trained or can be fine-tuned. We assume that the models are pre-built and ready to deploy.
+
+
 ## TODO
 ### Docker
 1. Basic Image recognition IRIS Model in a container 
