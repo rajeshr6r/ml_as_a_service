@@ -1,4 +1,4 @@
-# Machhine Learning Models as a Service
+# Machine Learning Models as a Service
 
 A Cloud Vendor Agnostic setup for providing deploying Machine Learning Models As a Service.
 
