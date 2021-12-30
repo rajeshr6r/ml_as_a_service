@@ -17,7 +17,7 @@ Some of the key critical challenges involved in deploying a model to production 
 Our purpose to is to address the above problems with a one-stop solution on cloud
 
 ## OUT OF SCOPE
-This repo will use boilerplate model training / deployment scripts and will not demonstrate how a model is being trained or can be fine-tuned. We assume that the models are pre-built and ready to deploy.
+<b>This repo will use boilerplate model training / deployment scripts and will not demonstrate how a model is being trained or can be fine-tuned. We assume that the models are pre-built and ready to deploy.</b>
 
 
 ## TODO
