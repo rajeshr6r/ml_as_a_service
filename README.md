@@ -3,7 +3,7 @@ A setup for providing ML As a Service with any Cloud Provider
 
 ## Background and Objective
 
-One of the greatest challenges faced by a Data Scientist is getting their <b>sophisticated ML Model running successfully in their laptops<b> to the end user. So many tools are available and yet everything requires the Data Scientist to learn the toolkit to proceed . 
+One of the greatest challenges faced by a Data Scientist is getting their <b>sophisticated ML Model running successfully in their laptops</b> to the end user. So many tools are available and yet everything requires the Data Scientist to learn the toolkit to proceed . 
 
 Some of the challenges involved in deploying a model to production include 
   a. Scalability 
