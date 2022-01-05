@@ -30,7 +30,10 @@ Our purpose to is to address the above problems with a one-stop solution on clou
 :heavy_check_mark:b. endpoint definition <br>
 :heavy_check_mark:c. Deployment to Dockerhub as a public image <br>
 
-### Cloud Resources to be deployed ( generic names . Will need specific components when deployed to specific vendors )
+### Cloud Resources to be deployed 
+
+Using generic names for components . Equivalent vendor specific component can be deployed with Terraform
+
 a. Cloud Function for storing requests to do async inference
 b. Queue for processing async inference requests 
 c. Storage for processing results from async inferences
