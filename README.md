@@ -34,11 +34,11 @@ Our purpose to is to address the above problems with a one-stop solution on clou
 
 Using generic names for components . Equivalent vendor specific component can be deployed with Terraform
 
-a. Cloud Function for storing requests to do async inference
-b. Queue for processing async inference requests 
-c. Storage for processing results from async inferences
-d. Container Registry
-e. Container Image hosting the ML Model
+a. Cloud Function for storing requests to do async inference <br>
+b. Queue for processing async inference requests <br>
+c. Storage for processing results from async inferences <br>
+d. Container Registry <br>
+e. Container Image hosting the ML Model <br>
 
 
 ### Terraform
