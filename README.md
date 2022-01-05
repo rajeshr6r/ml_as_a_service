@@ -26,20 +26,17 @@ Our purpose to is to address the above problems with a one-stop solution on clou
 
 ## TODO
 ### Docker
-1. Basic Image recognition IRIS Model in a container 
-2. endpoint definition
-3. Deployment to Dockerhub as a public image 
+[x]a. Basic Image recognition IRIS Model in a container 
+[x]b. endpoint definition
+[x]c. Deployment to Dockerhub as a public image 
 
-### Azure
-4. Add ARM Template for deploying the following assets to Azure
-5. Container Instance with ML Model
-6. Linux App Service
-7. Storage Account 
-8. Azure function with Blob Trigger to process batch images and send response 
-
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/rajeshr6r/ml_as_a_service/main/azure/azuredeploy.json)
+### Cloud Resources to be deployed ( generic names . Will need specific components when deployed to specific vendors )
+[]a. Cloud Function for storing requests to do async inference
+[]b. Queue for processing async inference requests 
+[]c. Storage for processing results from async inferences
+[]d. Container Registry
+[]e. Container Image hosting the ML Model
 
 
-### AWS
-
-### GCP
+### Terraform
+[]a. Terraform script to deploy resources to relevant Cloud provider
