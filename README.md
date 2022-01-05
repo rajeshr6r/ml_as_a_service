@@ -26,17 +26,17 @@ Our purpose to is to address the above problems with a one-stop solution on clou
 
 ## TODO
 ### Docker
-[x]a. Basic Image recognition IRIS Model in a container 
-[x]b. endpoint definition
-[x]c. Deployment to Dockerhub as a public image 
+:heavy_check_mark:a. Basic Image recognition IRIS Model in a container 
+:heavy_check_mark:b. endpoint definition
+:heavy_check_mark:c. Deployment to Dockerhub as a public image 
 
 ### Cloud Resources to be deployed ( generic names . Will need specific components when deployed to specific vendors )
-[]a. Cloud Function for storing requests to do async inference
-[]b. Queue for processing async inference requests 
-[]c. Storage for processing results from async inferences
-[]d. Container Registry
-[]e. Container Image hosting the ML Model
+a. Cloud Function for storing requests to do async inference
+b. Queue for processing async inference requests 
+c. Storage for processing results from async inferences
+d. Container Registry
+e. Container Image hosting the ML Model
 
 
 ### Terraform
-[]a. Terraform script to deploy resources to relevant Cloud provider
+a. Terraform script to deploy resources to relevant Cloud provider
