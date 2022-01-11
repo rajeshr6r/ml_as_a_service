@@ -24,7 +24,7 @@ Some of the key critical challenges involved in deploying a model to production 
 <b>This repo will use boilerplate model training / deployment scripts and will not demonstrate how a model is being trained or can be fine-tuned. We assume that the models are pre-built and ready to deploy.</b>
 
 ## Our Toolkit
-1. Python - REST API to wrap complexities involved in docker image generation
+1. Python - REST API with FastAPI to wrap complexities involved in docker image generation
 2. Docker - Generate docker container images to enable rapid prototyping and fast iterations from development to production  
 3. Terraform - IAC component to deploy assets to relevant cloud
 4. Ready-made container images with commonly used ML packages to reduce image build duration. 
