@@ -27,32 +27,6 @@ class InferenceInput(BaseModel):
     petal_width: float = Field(..., example=3.0, gt=0, title="petal width (cm)")
 
 
-class InferenceResult(BaseModel):
-    """
-    Inference result from the model
-    """
-
-    setosa: float = Field(..., example=0.987526, title="Probablity for class setosa")
-    versicolor: float = Field(
-        ..., example=0.000015, title="Probablity for class versicolor"
-    )
-    virginica: float = Field(
-        ..., example=0.012459, title="Probablity for class virginica"
-    )
-    pred: str = Field(
-        ..., example="versicolor", title="Predicted class with highest probablity"
-    )
-
-
-class InferenceResponse(BaseModel):
-    """
-    Output response for model inference
-    """
-
-    error: bool = Field(..., example=False, title="Whether there is error")
-    results: InferenceResult = ...
-
-
 class ErrorResponse(BaseModel):
     """
     Error response for the API
@@ -111,8 +85,8 @@ def imagebuild(imagetype, finalimagename, tag, response: Response):
 # docker build -t simpleiris:latest --build-arg MYAPP_IMAGE=python:3.7-slim-buster --build-arg PORT=8000 .
 async def builddockerimage(imagetype, finalimagename, tag):
     try:
-        dockerfiletemplate = f"dockerfile{imagetype}"
-        publishedimagename = f"rajeshr6routlook/{finalimagename}_{imagetype}:{tag}"
+        dockerfiletemplate = f"./docker/dockerfile{imagetype}"
+        publishedimagename = f"{finalimagename}_{imagetype}:{tag}"
         proc = await asyncio.create_subprocess_exec(
             "docker",
             "build",
