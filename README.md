@@ -65,7 +65,47 @@ c. Automated Versioning , logging .<br>
 3. Object Storage - <b> S3 / Azure Blob Storage / Google Storage bucket</b> for backup of incoming assets / docker images . 
 4. Persistent Storage - <b> EBS / Managed Disk / Persistent Disk </b> for installing necessary software in the hosting server
 
-### Terraform
+### Working
+
+<b>FastAPI Server running from remote server</b>
+
+<img src="https://imgur.com/YM9qWOVl.png" />
+<hr>
+<b>Docker Images prior to build </b>
+
+<img src=https://imgur.com/ZyLIdZWl.png/>
+<hr>
+<b>Swagger API Page to test API for docker builds </b>
+
+<img src=https://imgur.com/Ziy9RfVl.png/>
+<hr>
+<b>Testing Docker image build via API</b>
+
+<img src=https://imgur.com/naiITosl.png/>
+<hr>
+<b>API response on successfull generation of docker image</b>
+
+<img src=https://imgur.com/0Jgn7Rll.png/>
+<hr>
+<b>Generated image available in Registry</b>
+
+<img src=https://imgur.com/kPIhPxBl.png/>
+<hr>
+<b>ML Model REST API tested with docker command</b>
+
+<b>```docker run -itd -p 8081:8081 irisprebuilt_prebuild:v4```</b>
+<hr>
+<b>Model Endpoints visible in Swagger </b>
+
+<img src=https://imgur.com/Lp17ZArl.png/>
+<hr>
+<b>Testing Model Endpoint</b>
+
+<img src=https://imgur.com/J311MTdl.png/>
+<hr>
+
+
+### TODO Terraform
 a. Terraform script to deploy resources to relevant Cloud provider
 
 #### Product Enhancement Scope

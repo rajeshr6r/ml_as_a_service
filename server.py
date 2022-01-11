@@ -59,7 +59,7 @@ def imagebuild(imagetype, finalimagename, tag, response: Response):
     print(f"imagetype:{imagetype}")
     if imagetype == None or finalimagename == None or tag == None:
         response = {"result": "Mandatory parameters may be missing"}
-        response.status_code = 400
+
         return response
     else:
         if imagetype in ["prebuild", "scratch"]:
@@ -70,14 +70,12 @@ def imagebuild(imagetype, finalimagename, tag, response: Response):
                 builddockerimage(imagetype, finalimagename, tag)
             )
             response = {"result": result}
-            response.status_code = 201
             return response
         else:
             response = {
                 "result": "Unprocessable Entity",
                 "AllowedImagetypes": ["prebuild", "scratch"],
             }
-            response.status_code = 422
             return response
 
 
@@ -85,7 +83,7 @@ def imagebuild(imagetype, finalimagename, tag, response: Response):
 # docker build -t simpleiris:latest --build-arg MYAPP_IMAGE=python:3.7-slim-buster --build-arg PORT=8000 .
 async def builddockerimage(imagetype, finalimagename, tag):
     try:
-        dockerfiletemplate = f"./docker/dockerfile{imagetype}"
+        dockerfiletemplate = f"dockerfile{imagetype}"
         publishedimagename = f"{finalimagename}_{imagetype}:{tag}"
         proc = await asyncio.create_subprocess_exec(
             "docker",
